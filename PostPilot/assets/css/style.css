@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --inter: "Inter", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --covered-grace: "Covered By Your Grace", cursive;
+}
+
+* {
+    font-family: var(--inter);
+}
+
+.pp-navbar {
+    background-color: #FFF;
+    height: 65px;
+}
+
+.pp-navbar .navbar-brand img {
+    height: 30px;
+}
+
+
+a.nav-link {
+    font-size: .938rem;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+    color: #222222 !important;
+    margin-left: 1rem;
+}
+
+.btn,
+a.nav-link.btn {
+    border: 2px solid #2E2F35;
+    padding: 14px 22px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 0px #2E2F35;
+}
+
+a.nav-link.btn.btn-orange,
+.btn-orange {
+    background-color: #FF6D2C;
+    color: #FFF !important;
+}
+
+.btn-white{
+    background-color: #FFF;
+    color: #222222;
+}
+
+a.nav-link.btn:hover {
+    box-shadow: 4px 4px 0px #2E2F35;
+    transition: 1s ease-in;
+}
+
+header {
+    background: #E0F8F2;
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .title {
+    font-size: 5.125rem;
+    color: #2E2F35;
+    line-height: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+header .description {
+    font-size: 1.25rem;
+}
+
+header .title span,
+section h3 span,
+.postpilot-detail .detail h2 span {
+    color: #009387;
+    font-family: var(--covered-grace);
+}
+
+header .options .btn,
+.postpilot-detail .btn {
+    padding: 1.125rem 4rem;
+    font-size: .813rem;
+    line-height: 20px;
+    letter-spacing: 1.25px;
+}
+
+header .shopify-ratting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .shopify-ratting span {
+    font-size: 1rem;
+    color: #2E2F35;
+}
+
+header {
+    background-image: url('../images/hero-2-p.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header::after {
+    content: "";
+    background-image: url(../images/hero-1.png);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 65px);
+    z-index: 0;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+/* Section trusted */
+
+section, footer {
+    padding: 5rem 0;
+}
+
+.metrics .title,
+section h3 {
+    font-size: 3.938rem;
+    letter-spacing: -2px;
+    line-height: 4.75rem;
+    text-align: center;
+    color: #2E2F35;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.swiper {
+    width: 100%;
+    min-height: 300px;
+}
+
+.swiperBrands .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiperBrands .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiperBrands .content img {
+    cursor: pointer;
+}
+
+.swiperBrands .content img:first-child {
+    height: 194px;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
+    width: 100%;
+}
+
+.swiperBrands .content img:nth-child(2) {
+    max-width: 150px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #009387;
+}
+
+/* Direct Mail */
+.direct-mail {
+    background-color: #E0F8F2;
+}
+
+.metrics .title {
+    margin-bottom: 1rem;
+}
+
+.metrics .desc {
+    font-size: .838rem;
+    text-align: center;
+}
+
+.metrics .center,
+.metrics .left,
+.metrics .right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.metrics .left,
+.metrics .right {
+    justify-content: center;
+}
+
+.metrics .center {
+    align-items: center;
+}
+
+.postpilot-detail {
+    background-color: #FDF3EA;
+}
+
+.postpilot-detail .detail h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.postpilot-detail .detail .description {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.postpilot-detail .citation {
+    border: 2px solid #D1C7BE;
+    border-radius: 15px;
+    padding: 34px;
+    position: relative;
+}
+
+.postpilot-detail .citation::before {
+    content: "";
+    background-image: url('../images/icons/quotes.png');
+    position: absolute;
+    width: 48px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -15px;
+}
+
+
+.postpilot-detail .citation cite {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.postpilot-detail .citation .quotes span {
+    font-family: var(--roboto);
+    font-size: .875rem;
+    font-weight: 400;
+    color: #A89B90;
+    line-height: 22px;
+}
+
+.metrics .desc,
+header .description,
+.postpilot-detail .citation cite,
+.postpilot-detail .detail .description {
+    color: #58595D;
+}
+
+section.brands .cards .card {
+    border-radius: 13px;
+    height: 100%;
+}
+
+section.brands .cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.brands .cards .card img {
+    max-width: 95%;
+    margin-bottom: 2rem;
+}
+
+section.brands .cards .card .card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 36px;
+    color: #2E2F35;
+}
+
+section.brands .cards .card .card-text {
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 500;
+    color: #58595D;
+}
+
+section.timeline {
+    background-color: #E3F8F8;
+}
+
+section.timeline .items .item {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+section.timeline .items .item .title .number {
+    font-family: var(--covered-grace);
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgba(0, 147, 135, 0.4);
+    letter-spacing: 4px;
+    line-height: 50px;
+    margin-right: 2.5rem;
+}
+
+section.timeline .items .item.active .title .number {
+    color: #009387;
+}
+
+section.timeline .items .item .title .text {
+    font-size: 2.25rem;
+    color: rgba(46, 47, 53, 0.4);
+    letter-spacing: -0.5px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+section.timeline .items .item.active .title .text {
+    color: #2E2F35;
+}
+
+section.timeline .items .item .description {
+    display: none;
+}
+
+section.timeline .items .item.active .description {
+    height: 72px;
+    overflow-y: scroll;
+    padding-left: 6.5rem;
+    direction: rtl;
+    text-align: left;
+    margin-left: 1rem;
+    display: block;
+}
+
+/* Style scroll */
+section.timeline .items .item.active .description>* {
+    direction: ltr;
+}
+
+section.timeline .items .item.active .description::-webkit-scrollbar {
+    width: 2px;
+}
+
+section.timeline .items .item.active .description::-webkit-scrollbar-track {
+    background: #A0CDCD;
+}
+
+section.timeline .items .item.active .description::-webkit-scrollbar-thumb {
+    background-color: #58595D;
+}
+
+section.timeline .items .item.active .description::-webkit-scrollbar-thumb:hover {
+    background-color: #A0CDCD;
+}
+
+section.timeline .items .item.active .description::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* End Style scroll */
+
+
+
+section.timeline .items .item.active .description p {
+    color: #58595D;
+}
+
+
+
+header .description,
+header .options .btn,
+a.nav-link,
+header .shopify-ratting span,
+section h3 span,
+.metrics .desc,
+.postpilot-detail .detail .description,
+.postpilot-detail .btn {
+    font-weight: 500;
+}
+
+.brands-detail {
+    background-color: #EEECFF;
+}
+
+.brands-detail .col-right .brand-detail{
+    width: 95%;
+}
+
+.brands-detail .col-right .btn,
+.postpilot-try .btn{
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.brands-detail .details-navigation a{
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.brands-detail .details-navigation a.active{
+    border-bottom: 2px solid #009387;
+}
+
+.brands-detail h3 {
+    text-align: left;
+    width: 90%;
+}
+
+.brands-detail .description {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 34px;
+    color: #58595D;
+    margin-bottom: 2rem;
+}
+
+.brands-detail .stats p {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: #2E2F35;
+    margin: 0;
+}
+
+.brands-detail .stats span {
+    color: #58595D;
+    line-height: 22px;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.postpilot-try{
+    background-color:#FF6D2C;     
+}
+
+.postpilot-try .rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.postpilot-try .rate span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.postpilot-try p{
+    color: #FFF;
+}
+
+.postpilot-try p.description{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.postpilot-try p.footer{
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+
+.postpilot-trend{
+    background-color: #F3FAFA;
+}
+
+.postpilot-trend .card-trend{
+    padding: 0 1.5rem;
+}
+
+.postpilot-trend .card-trend img{
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.postpilot-trend .card-trend p{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #2E2F35;
+    cursor: pointer;
+}
+
+/* .postpilot-try::before{
+    width: 50%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/flyer-paw.png');
+    background-repeat: no-repeat;
+    position: absolute;
+} */
+
+footer{
+    padding-bottom: 1rem;
+}
+
+footer .eco{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+footer .eco span{
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: #58595D;
+}
+
+footer .mail{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2E2F35;
+}
+
+footer .copy{
+    font-size: 1rem;
+    color: #58595D;
+    font-weight: 400;
+}
+
+footer .footer-links p{
+    font-size: .75rem;
+    font-weight: 700;
+    color: #2E2F35;
+}
+
+footer .footer-links ul{
+    padding: 0;
+    list-style: none;
+}
+
+footer .footer-links ul li{
+    margin-bottom: .75rem;
+}
+
+footer .footer-links ul li a{
+    font-size: 1rem;
+    color: #2E2F35;
+    font-weight: 400;
+    text-decoration: unset;
+}
+
+footer .sub-footer .copy{
+    font-size: .875rem;
+    font-weight: 400;
+    color: #58595D;
+}
+
+@media screen and (max-width: 1024px) {
+    header::after {
+        width: 100%;
+    }
+
+    btn,
+    a.nav-link.btn,
+    header .options .btn,
+    .postpilot-detail .btn {
+        padding: .75rem 10px;
+    }
+
+    .metrics .title,
+    .postpilot-detail .detail h2,
+    section h3,
+    header .title {
+        font-size: 4.125rem;
+        line-height: 5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .metrics .title,
+    section h3,
+    .postpilot-detail .detail h2,
+    header .title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    header {
+        background-image: unset;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .metrics .left,
+    .metrics .right {
+        padding: 0 7rem
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    section.timeline .items .item {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+    section.timeline .items .item {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 424px) {
+    section.timeline .items .item {
+        width: 100%;
+    }
+}

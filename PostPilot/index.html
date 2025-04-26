@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostPilot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom-slides.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light pp-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="me-auto mb-2 mb-lg-0"></div>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+
+                            <img src="./assets/images/nav-dropdown.png" alt="arrow">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Succees stories</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="companiesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Companies
+
+                            <img src="./assets/images/nav-dropdown.png" alt="arrow">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-login" href="#">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-orange" href="#">Create free account</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container" style="z-index: 1;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="title">
+                        Meet your <br> <span>favorite</span> new (old) <br> marketing channel.
+                    </h2>
+
+                    <p class="description col-md-8">
+                        Remarkable results. Easier than email. Postcard marketing reinvented for modern ecommerce.
+                    </p>
+
+                    <div class="options d-flex col-lg-6 justify-content-between align-items-center">
+                        <a href="#" class="btn btn-orange">TRY IT RISK-FREE</a>
+
+                        <div class="shopify-ratting">
+                            <img src="./assets/images/five_stars.png" alt="rate">
+                            <span>5.0 Shopify Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="trusted container">
+        <h3>Trusted by thousands <br> of top DTC <span>brands.</span></h3>
+
+        <div class="swiper swiperBrands">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img src="./assets/images/front_image.png" alt="Flyer">
+
+                        <img src="./assets/images/rungum.png" alt="Brand">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img src="./assets/images/front_image_3.png" alt="Flyer">
+
+                        <img src="./assets/images/beardbrand.png" alt="Brand">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img src="./assets/images/front_image_2.png" alt="Flyer">
+
+                        <img src="./assets/images/promix.png" alt="Brand">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img src="./assets/images/scotch.png" alt="Flyer">
+
+                        <img src="./assets/images/scotch-porter.png" alt="Brand">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="direct-mail">
+        <div class="container">
+            <h3>Why use direct mail? <br> It <span>works</span> like crazy.</h3>
+
+            <div class="row metrics">
+                <div class="col-md-4 left">
+                    <p class="title">
+                        28x
+                    </p>
+
+                    <p class="desc">
+                        Higher response rate than email & digital
+                    </p>
+                </div>
+                <div class="col-md-4 center">
+                    <img src="./assets/images/home-number-chart.png" alt="">
+
+                    <p class="desc">Your message get read</p>
+                </div>
+                <div class="col-md-4 right">
+                    <p class="title">
+                        17 Days
+                    </p>
+
+                    <p class="desc">
+                        Lifespan of a postcard vs. seconds for email or SMS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="postpilot-detail">
+        <div class="container">
+            <h3>
+                PostPilot makes it a <span>cinch</span> to <br class="d-none d-lg-block"> send personalized, profit-<br
+                    class="d-none d-lg-block">generating postcards.
+            </h3>
+
+            <div class="row details mb-5">
+                <div class="col-md-5 detail">
+                    <h2 class="title mb-4">
+                        <span>Powerful</span> <br class="d-none d-lg-block">
+                        acquisition <br class="d-none d-lg-block"> & retention
+                    </h2>
+
+                    <p class="description">Send one-off or triggered campaigns to customers & prospects. Target email
+                        leads with MailMatch™.
+                    </p>
+
+                    <div class="citation">
+                        <cite>It’s like Klaviyo for direct mail. The results are absolutely insane.</cite>
+
+                        <div class="d-flex justify-content-between quotes mt-3">
+                            <span>Ash Melwani, CMO</span>
+
+                            <img src="./assets/images/icons/obvi.png" alt="obvi logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row details mb-5">
+                <div class="col-md-6 offset-md-6 detail">
+                    <h2 class="title mb-4">
+                        <span>Fight back </span> against iOS <br class="d-none d-lg-block">
+                        updates, jacked-up <br class="d-none d-lg-block"> CPCs & spam folders
+                    </h2>
+
+                    <p class="description">
+                        Deliver your message to all of your customers — for less than the cost of a click.
+                    </p>
+
+                    <div class="citation">
+                        <cite>
+                            PostPilot is our new weapon against sinking email engagement and rising PPC costs. The
+                            results and ROI have been outstanding. It’s now one of our core marketing channels to
+                            increase acquisition & LTV.
+                        </cite>
+
+                        <div class="d-flex justify-content-between quotes mt-3">
+                            <span>Leah Keith, GM</span>
+
+                            <img src="./assets/images/icons/overlander.png" alt="overlander logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row details mb-5">
+                <div class="col-md-5 detail">
+                    <h2 class="title mb-4">
+                        Done <span>you</span>
+                    </h2>
+
+                    <p class="description">
+                        From design & strategy to stamp-licking, our ecom experts help you every step of the way.
+                    </p>
+
+                    <div class="citation">
+                        <cite>
+                            The team is so knowledgeable and beyond helpful. I’m blown away by their communication,
+                            detail, and attentiveness and always feel like they have our best interest in mind.
+                            Definitely worth a try.
+                        </cite>
+
+                        <div class="d-flex justify-content-between quotes mt-3">
+                            <span>Holly Davies, Marketing Director</span>
+
+                            <img src="./assets/images/icons/paragon.png" alt="paragon logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-orange">TRY IT RISK-FREE</a>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <h3>
+                Everything your brand needs to <br class="d-none d-lg-block"> <span>make your brand unforgettable</span>
+            </h3>
+
+            <div class="row cards align-items-stretch">
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #FDF3EA;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/klaviyo.png" alt="klaviyo">
+                            <h5 class="card-title">Plug-and-play with <br> your stack</h5>
+                            <p class="card-text">
+                                Native integrations provide seamless segmentation, automation & tracking. No clunky
+                                spreadsheets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #E0F8F2;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/campaing.png" alt="campaing.png">
+                            <h5 class="card-title">Run campaigns <br>on autopilot</h5>
+                            <p class="card-text">
+                                Ink profits while you sleep: Just set it and forget it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #EEECFF;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/roi.png" alt="roi">
+                            <h5 class="card-title">Real-time ROI dashboard</h5>
+                            <p class="card-text">
+                                Track performance of every postcard by customer or discount code. Your CFO will love it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #D9F2F7;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/longshot.png" alt="longshot">
+                            <h5 class="card-title">Deliver WOW with *real* <br class="d-none d-md-block"> handwritten
+                                cards</h5>
+                            <p class="card-text">
+                                Our proprietary robots use real pens and ink for an unforgettable VIP touch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #FAEDED;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/poststamp.png" alt="poststamp">
+                            <h5 class="card-title">Predictable pricing</h5>
+                            <p class="card-text">
+                                Unlike CPCs, postage rates don’t change based on competition or who you’re targeting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="background-color: #EEECFF;">
+                        <div class="card-body text-center">
+                            <img src="./assets/images/brands/d017_img.png" alt="d017_img">
+                            <h5 class="card-title">Complimentary <br> concierge service</h5>
+                            <p class="card-text">
+                                DTC is in our DNA. Our pros will build your strategy and custom designs using
+                                battle-tested best practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="timeline">
+        <div class="container">
+            <h3 class="mb-5">
+                Fast launch. Fast results. <br> <span>Here's how.</span>
+            </h3>
+
+            <div class="items">
+                <div class="item">
+                    <p class="title">
+                        <span class="number">
+                            01
+                        </span>
+
+                        <span class="text">
+                            Segment
+                        </span>
+                    </p>
+
+                    <div class="description">
+                        <p>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p class="title">
+                        <span class="number">
+                            02
+                        </span>
+
+                        <span class="text">
+                            Design
+                        </span>
+                    </p>
+
+                    <div class="description">
+                        <p>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item active">
+                    <p class="title">
+                        <span class="number">
+                            03
+                        </span>
+
+                        <span class="text">
+                            Send
+                        </span>
+                    </p>
+
+                    <div class="description">
+                        <p>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p class="title">
+                        <span class="number">
+                            04
+                        </span>
+
+                        <span class="text">
+                            Convert
+                        </span>
+                    </p>
+
+                    <div class="description">
+                        <p>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                            One-off announcements or automatically triggered flows. Customers receive their personalized
+                            cards within a week. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="postpilot-dtc">
+
+        <h3>
+            PostPilot is 🔥 for <span>DTC</span>
+        </h3>
+
+        <div class="swiper swiperDtc mt-5 text-center">
+            <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/helenguo.png" alt="avatar - helen guo">
+
+                            <div class="ms-3">
+                                <p class="mb-0">John Tucker</p>
+                                <span>@johnT</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/helenguo.png" alt="avatar - helen guo">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Helen Guo</p>
+                                <span>@HelenGuo_</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/nathan.png" alt="avatar - nathan">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Nathan Woods</p>
+                                <span>@HeisNathan</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/chris.png" alt="avatar - chris">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Chris Lander</p>
+                                <span>@chris_basis</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+
+                <!-- Repeat -->
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/helenguo.png" alt="avatar - helen guo">
+
+                            <div class="ms-3">
+                                <p class="mb-0">John Tucker</p>
+                                <span>@johnT</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/helenguo.png" alt="avatar - helen guo">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Helen Guo</p>
+                                <span>@HelenGuo_</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/nathan.png" alt="avatar - nathan">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Nathan Woods</p>
+                                <span>@HeisNathan</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="header">
+                        <div class="info d-flex align-items-center">
+                            <img src="./assets/images/avatar/chris.png" alt="avatar - chris">
+
+                            <div class="ms-3">
+                                <p class="mb-0">Chris Lander</p>
+                                <span>@chris_basis</span>
+                            </div>
+                        </div>
+
+                        <img src="./assets/images/icons/x_black.png" alt="x logo">
+                    </div>
+
+                    <div class="body">
+                        Been using PostPilot for years. Good for re-engagement. And you can get creative with your
+                        messaging.
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-orange mb-3">TRY IT RISK-FREE</a>
+        </div>
+
+
+    </section>
+
+    <section class="brands-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-left">
+                    <img src="./assets/images/brands/obvi-flyer.png" alt="obvi" id="obvi-image" style="max-width: 100%;">
+                </div>
+                <div class="col-md-6 col-right">
+                    <div id="obvi-description" class="active brand-detail mb-4">
+                        <h3>
+                            How <span>Obvi</span> Drives Profits with Hands-Off Postcard Campaigns
+                        </h3>
+
+                        <p class="description">
+                            The 🚀 supplements brand wanted to offset high ad costs and reach dormant customers. They
+                            scored 1000%+ ROIs.
+                        </p>
+
+                        <div class="d-flex justify-content-between stats">
+                            <div>
+                                <p>1468%</p>
+                                <span>ROI</span>
+                            </div>
+
+                            <div>
+                                <p>8.59%</p>
+                                <span>Conversion Rate</span>
+                            </div>
+
+                            <div>
+                                <p>$73,457</p>
+                                <span>Sales Generated</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-white">Read Case Study</a>
+                </div>
+
+                <div
+                    class="offset-md-6 col-md-6 details-navigation d-flex align-items-center justify-content-between mt-4">
+                    <a href="javascript:void(0)" data-target="obvi-description" class="active navigator">
+                        <img src="./assets/images/icons/obvi.png" alt="obvi">
+                    </a>
+
+                    <a href="javascript:void(0)" data-target="bulletproof-description" class="navigator">
+                        <img src="./assets/images/icons/bulletproof.png" alt="bulletproof">
+                    </a>
+
+                    <a href="javascript:void(0)" data-target="boom-description" class="navigator">
+                        <img src="./assets/images/icons/boom.png" alt="boom">
+                    </a>
+
+                    <a href="javascript:void(0)" data-target="orbitbaby-description" class="navigator">
+                        <img src="./assets/images/icons/orbitbaby.png" alt="orbitbaby">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="postpilot-try p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-left" style="padding: 5rem 0;">
+                    <h3 class="text-start text-white">
+                        Try PostPilot <br class="d-none d-lg-block" />
+                        Risk-Free
+                    </h3>
+
+                    <p class="description mb-5">
+                        No contracts. No commitments. Guaranteed results.*
+                    </p>
+
+                    <div class="d-flex mb-5">
+                        <a href="#" class="btn btn-white me-5">
+                            Get Started
+                        </a>
+
+                        <div class="rate">
+                            <img src="./assets/images/statrs_white.png" alt="stars">
+                            <span>5.0 Shopify Rating</span>
+                        </div>
+                    </div>
+
+                    <p class="footer">
+                        * for qualified brands with over $1m annual Shopify revenue.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-right d-md-block d-none">
+                    <img src="./assets/images/flyer-paw.png" alt="Flyer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="postpilot-trend">
+        <div class="container">
+            <h3>Latest trends & <span>insights</span></h3>
+
+            <div class="row">
+                <div class="col-md-4 card-trend mb-3">
+                    <img src="./assets/images/trend-1.png" alt="Trend 1">
+
+                    <p>3 Low-Cost Campaigns You Must Run to Win BFCM</p>
+                </div>
+
+                <div class="col-md-4 card-trend mb-3">
+                    <img src="./assets/images/trend-2.png" alt="Trend 2">
+
+                    <p>Postcard Marketing: The Definitive Guide to High ROI [2022]</p>
+                </div>
+
+                <div class="col-md-4 card-trend mb-3">
+                    <img src="./assets/images/trend-3.png" alt="Trend 3">
+
+                    <p>The Ultimate Guide to Thank You Notes for Ecommerce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-3 eco">
+                    <img src="./assets/images/eco-friend.png" alt="Eco Friend" class="mb-3">
+                    <span>
+                        Our paper is sourced from FSC-certified mills. We plant enough trees to more than double our
+                        paper usage.
+                    </span>
+                </div>
+
+                <div class="offset-md-1 col-md-8">
+                    <div class="row footer-links">
+                        <div class="col-md-8">
+                            <p>Company</p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Partner program</a></li>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">Direct Mail Academy</a></li>
+                                        <li><a href="#">Success stories</a></li>
+                                        <li><a href="#">Terms & conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Contact us</p>
+
+                            <p class="mail">
+                                <img src="./assets/images/icons/mail.png" alt="mail">
+                                support@postpilot.com
+                            </p>
+
+                            <span class="copy">
+                                Printed with ❤️️️ at our facility in South Carolina.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="w-100 d-flex justify-content-between sub-footer pt-3">
+                <div>
+                    <img src="./assets/images/icons/postpilot.png" alt="Logo" style="max-width: 119px;">
+                    <p class="copy pt-2">
+                        © 2022 PostPilot, Inc. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="nav-link btn btn-login" href="#">Login</a>
+
+                    <a class="nav-link btn btn-orange" href="#">Create free account</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let timelineItems = $('.item');
+
+        timelineItems.each(function () {
+            $(this).on('click', function () {
+                timelineItems.removeClass('active'); // sem ponto
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom-slides.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiperBrands", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        const swiperDtc = new Swiper(".swiperDtc", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            speed: 3000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        // Pausa autoplay no hover
+        const swiperEl = document.querySelector('.swiperDtc');
+        swiperEl.addEventListener('mouseenter', () => swiperDtc.autoplay.stop());
+        swiperEl.addEventListener('mouseleave', () => swiperDtc.autoplay.start());
+
+    </script>
+</body>
+
+</html>

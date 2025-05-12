@@ -3,6 +3,8 @@ import { Tabs } from "expo-router";
 import { Colors } from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 import { View } from "react-native";
+import React from "react";
+import { StatusBar } from "expo-status-bar";
 
 export default function DefaultLayout() {
     const tabTintColor = useThemeColor({ light: Colors.light.tabIconSelected, dark: Colors.dark.tabIconSelected }, 'tint');
@@ -20,43 +22,48 @@ export default function DefaultLayout() {
     );
 
     return (
-        <Tabs initialRouteName="index" screenOptions={({ route }) => ({
-            headerShown: false,
-            tabBarActiveTintColor: tabTintColor,
-            tabBarInactiveTintColor: tabInactiveColor,
-            tabBarStyle: {
-                backgroundColor: tabBackgroundColor,
-                borderTopWidth: 0,
-            },
-            tabBarShowLabel: false,
-        })}>
+        <React.Fragment>
+            <StatusBar style="auto"/>
 
-            <Tabs.Screen name="index" options={{
-                tabBarIcon: ({ focused }) =>
-                    renderIcon(focused ? "home" : "home-outline", focused),
-            }} />
+            <Tabs initialRouteName="index" screenOptions={({ route }) => ({
+                headerShown: false,
+                tabBarActiveTintColor: tabTintColor,
+                tabBarInactiveTintColor: tabInactiveColor,
+                tabBarStyle: {
+                    backgroundColor: tabBackgroundColor,
+                    borderTopWidth: 0,
+                    borderBottomWidth: undefined
+                },
+                tabBarShowLabel: false,
+            })}>
 
-            <Tabs.Screen name="messages" options={{
-                tabBarIcon: ({ focused }) =>
-                    renderIcon(focused ? "mail" : "mail-outline", focused),
-            }} />
+                <Tabs.Screen name="index" options={{
+                    tabBarIcon: ({ focused }) =>
+                        renderIcon(focused ? "home" : "home-outline", focused),
+                }} />
 
-            <Tabs.Screen name="shop" options={{
-                tabBarIcon: ({ focused }) =>
-                    renderIcon(focused ? "bag" : "bag-outline", focused),
-            }} />
+                <Tabs.Screen name="messages" options={{
+                    tabBarIcon: ({ focused }) =>
+                        renderIcon(focused ? "mail" : "mail-outline", focused),
+                }} />
 
-            <Tabs.Screen name="favorite" options={{
-                tabBarIcon: ({ focused }) =>
-                    renderIcon(focused ? "heart" : "heart-outline", focused),
-            }} />
+                <Tabs.Screen name="shop" options={{
+                    tabBarIcon: ({ focused }) =>
+                        renderIcon(focused ? "bag" : "bag-outline", focused),
+                }} />
 
-            <Tabs.Screen name="profile" options={{
-                tabBarIcon: ({ focused }) =>
-                    renderIcon(focused ? "person" : "person-outline", focused),
-            }} />
+                <Tabs.Screen name="favorite" options={{
+                    tabBarIcon: ({ focused }) =>
+                        renderIcon(focused ? "heart" : "heart-outline", focused),
+                }} />
+
+                <Tabs.Screen name="profile" options={{
+                    tabBarIcon: ({ focused }) =>
+                        renderIcon(focused ? "person" : "person-outline", focused),
+                }} />
 
 
-        </Tabs>
+            </Tabs>
+        </React.Fragment>
     );
 }
